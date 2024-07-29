@@ -58,7 +58,7 @@ document.getElementById('tg-form').addEventListener('submit', function(e) {
         message += `<b>Сообщение:</b> ${this.message.value} \n`;
 
         // Validate name and phone number
-        if (name === '' || phone === '') {
+        if (this.name === '' || this.phone === '') {
             alert('Name and Phone number are required');
             return; // Stop form submission if validation fails
         }
