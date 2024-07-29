@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="src/img/logo.jpg">
 
     <title>Сумки</title>
 </head>
@@ -27,10 +28,6 @@
                 </li>
 
                 <li>
-                    <a href="#" target="_blank">Политика конфиденциальности</a>
-                </li>
-
-                <li>
                     <a href="#">
                         <img src="src/img/logo-bg.png" alt="">
                     </a>
@@ -38,10 +35,6 @@
 
                 <li>
                     <a href="#" target="_blank">Доставка и оплата</a>
-                </li>
-
-                <li>
-                    <a href="#" target="_blank">О нас</a>
                 </li>
 
                 <li>
@@ -57,7 +50,7 @@
             <p class="text">
                 mile nashop
             </p>
-            <img src="src/img/logo-bg1.png" alt="">
+            <img src="src/img/logo-bg.png" alt="">
         </section>
 
         <section class="model">
@@ -93,16 +86,7 @@
         </section>
 
         <section class="catalog">
-            <!-- <div class="controls">
-                <div class="slider-btn btn-1 btn-active"></div>
-                <div class="slider-btn btn-2"></div>
-                <div class="slider-btn btn-3"></div>
-                <div class="slider-btn btn-4"></div>
-                <div class="slider-btn btn-5"></div>
-            </div> -->
-
             <div class="wrapper">
-
                 <div class="controls">
                     <div class="slider-btn btn-1 btn-active"></div>
                     <div class="slider-btn btn-2"></div>
@@ -111,39 +95,136 @@
                     <div class="slider-btn btn-5"></div>
                 </div>
 
-                <div class="box box-1 box-active" style="background: url(src/img/s1.jpeg) center center/cover no-repeat;">
+                <div class="box box-1 box-active"
+                    style="background: url(src/img/s1.jpeg) center center/cover no-repeat;">
+
                 </div>
 
                 <div class="box box-2" style="background: url(src/img/s2.jpeg) center center/cover no-repeat;">
-                    2
+
                 </div>
 
                 <div class="box box-3" style="background: url(src/img/s3.jpeg) center center/cover no-repeat;">
-                    3
+
                 </div>
 
                 <div class="box box-4" style="background: url(src/img/s4.jpeg) center center/cover no-repeat;">
-                    4
+
                 </div>
 
                 <div class="box box-5" style="background: url(src/img/s5.webp) center center/cover no-repeat;">
-                    5
+
                 </div>
             </div>
         </section>
 
-        <section class="s3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perspiciatis provident doloremque quia
-                eius veniam? Error praesentium, porro accusamus officia, in nostrum aliquid eligendi amet neque sed
-                voluptates quae quia!</p>
+        <section class="about">
+            <div class="blur"></div>
+            <div class="titles">О нас</div>
+            <div class="bag-img" style="background: url(src/img/bag.jpeg) center center/cover no-repeat">
+                <p class="about-text">
+                    В mile nashop мы посвящаем себя предоставлению модных и тщательно отобранных
+                    моделей трендовых сумок, которые подойдут к любому стилю и случаю. Обладая тонким вкусом и стремлением
+                    к качеству, мы стремимся предложить вам последние модные тенденции в мире сумок.
+                </p>
+                <ul class="about-list">
+                    <li>
+                        <h2 class="about-title">Широкий выбор:</h2>
+                        <p>
+                            Исследуйте наш ассортимент сумок, от стильных 
+                            сумок-тоут до элегантных клатчей, разработанных, чтобы 
+                            дополнить ваш уникальный стиль.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h2 class="about-title">Гарантия качества:</h2>
+                        <p>
+                            Каждая сумка в нашей коллекции изготовлена с точностью и заботой, 
+                            используя качественные материалы для обеспечения прочности и стиля.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h2 class="about-title">Доступная роскошь:</h2>
+                        <p>
+                            Мы считаем, что роскошь должна быть доступной для всех. 
+                            Поэтому мы предлагаем высококачественные сумки по 
+                            конкурентоспособным ценам.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h2 class="about-title">Удовлетворение клиентов:</h2>
+                        <p>
+                            Ваше удовлетворение - наш приоритет. Наша отзывчивая команда 
+                            всегда готова помочь вам найти идеальную сумку, 
+                            соответствующую вашим потребностям.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="form" style="background: url(src/img/form-bg.jpeg) center center/cover no-repeat;">
+            <div class="blur"></div>
+            <div class="titles">отправить заявку</div>
+            <form id="tg-form" class="form-wrap">
+                <div class="form-group">
+                    <!-- <label class="form-label"></label> -->
+                    <input type="text" name="name" class="form-controls" placeholder="Введите имя:">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label class="form-label"></label> -->
+                    <input type="tel" x-cloak="" name="phone" class="form-controls tel" id="phone"
+                        placeholder="Введите телефон:">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label class="form-label"></label> -->
+                    <input type="text" name="message" class="form-controls" placeholder="добавьте сообщение:">
+                </div>
+
+                <button type="submit" class="titles click-btn">отправить</button>
+            </form>
+            <div class="form-text">
+                <p>
+                    Отправьте заявку, чтобы мы могли с вами связаться!
+                    Ваше мнение важно для нас! Мы обязательно рассмотрим
+                    ваш запрос и ответим в ближайшее время. Спасибо, что выбрали нас!
+                </p>
+            </div>
+            <div class="popup hide" id="success"> Заявка отправлена!</div>
         </section>
     </main>
 
     <footer>
+        <div class="footer-wrap">
+            <ul>
+                <li>
+                    <a href="">политика конфиденциальности</a>
+                </li>
 
+                <li>
+                    <a href="">политика конфиденциальности</a>
+                </li>
+
+                <li>
+                    <a href="">политика конфиденциальности</a>
+                </li>
+
+                <li>
+                    <a href="">политика конфиденциальности</a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <script src="src/js/script.js"></script>
+    <script src="src/js/form.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js?ver=1.0.0"
+        id="tgsend-js"></script>
 </body>
 
 </html>

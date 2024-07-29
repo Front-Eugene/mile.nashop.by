@@ -1,3 +1,7 @@
+:root {
+    --section-margin: 20px 0 0 0;
+}
+
 body {
     max-width: 1400px;
 
@@ -40,6 +44,37 @@ ul a {
     display: none;
 }
 
+.show {
+    display: block;
+}
+
+.titles {
+    height: 30px;
+    margin: 20px 50px;
+    padding: 5px 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    /* background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px); */
+}
+
+.titles::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -6px;
+    bottom: -6px;
+    left: 2px;
+    border: 2px solid #000;
+}
+
 header {
     width: 100%;
     max-width: 1400px;
@@ -50,7 +85,6 @@ header {
     align-items: center;
     z-index: 999;
     top: 0;
-    /* left: 0; */
 
     text-transform: uppercase;
 
@@ -105,7 +139,7 @@ header img {
 .model {
     width: 100%;
     height: 400px;
-    margin: 20px 0 0 0;
+    margin: var(--section-margin);
     background: #fff;
     position: sticky;
     z-index: 20;
@@ -163,6 +197,9 @@ header img {
     width: 100%;
     height: 50%;
     background: #402d20;
+    background: #b3581c;
+    background: #22262A;
+
 }
 
 
@@ -173,7 +210,7 @@ header img {
 .catalog {
     width: 100%;
     height: 400px;
-    margin: 20px 0 0 0;
+    margin: var(--section-margin);
     position: sticky;
     display: flex;
     justify-content: flex-end;
@@ -198,10 +235,13 @@ header img {
     width: 20px;
     cursor: pointer;
     background: #402d20;
+    background: #b3581c;
 }
 
 .btn-active {
     background: #fff;
+    transform: rotate(45deg);
+    transition: .5s;
 }
 
 .wrapper {
@@ -225,12 +265,144 @@ header img {
     opacity: 1;
 }
 
-.s3 {
+.about {
     width: 100%;
-    height: 400px;
-    margin: 20px 0 0 0;
-    background: #42eb36;
+    height: 510px;
+    margin: var(--section-margin);
     position: sticky;
     z-index: 40;
     top: 80px;
+    display: flex;
+    background: #cbc4bc;
+}
+
+.about-list {
+    display: block;
+}
+
+.about-title {
+    font-size: 25px;
+    font-weight: 300;
+    position: relative;
+    z-index: 40;
+}
+
+.about-text {
+    width: 80%;
+    padding: 80px 0  0 50px;
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    z-index: 40;
+}
+
+.about-img {
+    height: 100%;
+    width: 100%;
+}
+
+.about-list p{
+    margin: 5px 0;
+    position: relative;
+    z-index: 40;
+}
+
+.form {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: var(--section-margin);
+    position: sticky;
+    top: 80px;
+    z-index: 50;
+}
+
+.form-wrap {
+    padding: 120px 50px;
+    position: relative; 
+    z-index: 40;
+}
+
+.form-group {
+    position: relative;
+    width: 200px;
+    margin: 0 0 20px 0;
+    padding: 5px 10px;
+    border: 2px solid #000;
+}
+
+.form-group::after {
+    width: 220px;
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -6px;
+    bottom: -6px;
+    left: 2px;
+    border: 2px solid #000;
+}
+
+.click-btn {
+    margin: 0;
+    padding: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.form-controls {
+    /* display: block; */
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.form-controls::placeholder {
+    color: #000;
+}
+
+.form-text {
+    width: 400px;
+    padding: 120px 0 0 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 40;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+}
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 80px;
+    background: #22262A;
+    margin: var(--section-margin);
+}
+
+footer a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
