@@ -50,7 +50,8 @@ ul a {
 
 .titles {
     height: 30px;
-    margin: 20px 50px;
+    top: 20px;
+    left: 50px;
     padding: 5px 10px;
     position: absolute;
     display: flex;
@@ -146,6 +147,26 @@ header img {
     top: 80px;
 }
 
+.product-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    background: #00000030;
+    color: #00000000;
+}
+
+.product-link:hover {
+    color: #000;
+    background: #00000000;
+}
+
 .model-content {
     display: flex;
 }
@@ -162,6 +183,7 @@ header img {
 .model-img {
     width: calc(100% / 3);
     height: 200px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -392,8 +414,6 @@ header img {
 footer {
     width: 100%;
     height: 100px;
-    position: sticky;
-    top: 80px;
     background: #22262A;
     margin: var(--section-margin);
 }

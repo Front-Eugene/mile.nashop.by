@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/catalog.css">
+    <link rel="stylesheet" href="../../css/product.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="../../img/logo.jpg">
+
+    <title>Сумки</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">Каталог</a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank">Контакты</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="../../img/logo-bg.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank">Доставка и оплата</a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank">Статьи</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product">
+            <div class="product-img-wrap">
+                <img src="../../img/s1.jpeg" alt="">
+                <img src="../../img/s2.jpeg" alt="">
+                <img src="../../img/s3.jpeg" alt="">
+                <img src="../../img/s4.jpeg" alt="">
+                <img src="../../img/s5.jpeg" alt="">
+            </div>
+
+            <div class="product-description-wrap">
+                <div class="descripton-text">
+                    <h1 class="titles titles-position">Грация</h1>
+
+                    <p class="description-about">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos 
+                        beatae expedita nobis iste maxime asperiores reprehenderit recusandae 
+                        dolor pariatur atque natus, a itaque consectetur fuga vitae nulla tempore! 
+                        Autem, molestias.
+                    </p>
+
+                    <p class="">
+                        Ширина: 15см
+                    </p>
+
+                    <p>
+                        Длина: 30см
+                    </p>
+
+                    <p>
+                        Материал: кожа
+                    </p>
+
+                    <p>
+                        Цвет: кремовый
+                    </p>
+
+                    <a href="#form">
+                        <button class="buy-btn btn-position">
+                            заказать
+                        </button>
+                    </a>
+
+                    <p style="font-size: 25px;">
+                        80 руб
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="form" class="form" style="background: url(../../img/form-bg.jpeg) center center/cover no-repeat;">
+            <div class="blur"></div>
+            <div class="titles">отправить заявку</div>
+            <form id="tg-form" class="form-wrap">
+                <div class="form-group">
+                    <!-- <label class="form-label"></label> -->
+                    <input type="text" name="name" class="form-controls" placeholder="Введите имя:">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label class="form-label"></label> -->
+                    <input type="tel" x-cloak="" name="phone" class="form-controls tel" id="phone"
+                        placeholder="Введите телефон:">
+                </div>
+
+                <div class="form-group">
+                    <!-- <label class="form-label"></label> -->
+                    <input type="text" name="message" class="form-controls" placeholder="добавьте сообщение:">
+                </div>
+
+                <button type="submit" class="titles click-btn" style="position: relative; left: 0;">отправить</button>
+            </form>
+            <div class="form-text">
+                <p>
+                    Отправьте заявку, чтобы мы могли с вами связаться!
+                    Ваше мнение важно для нас! Мы обязательно рассмотрим
+                    ваш запрос и ответим в ближайшее время. Спасибо, что выбрали нас!
+                </p>
+            </div>
+            <div class="popup hide" id="success"> Заявка отправлена!</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrap">
+            <ul>
+                <li>
+                    <a href="">политика конфиденциальности</a>
+                </li>
+
+                <li>
+                    <a href="">политика конфиденциальности</a>
+                </li>
+
+                <li>
+                    <a href="">политика конфиденциальности</a>
+                </li>
+
+                <li>
+                    <a href="">политика конфиденциальности</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js?ver=1.0.0"
+    id="tgsend-js"></script>
+    <script src="../../js/form.js"></script>
+</body>
+</html>

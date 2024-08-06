@@ -1,0 +1,40 @@
+.product {
+    width: 100%;
+    display: flex;
+}
+
+.product-img-wrap {
+    width: 50%;
+    margin: 80px 0 0 0;
+}
+
+.product-img-wrap img{
+    width: 100%;
+}
+
+.product-description-wrap {
+    width: 50%;
+    height: calc(100vh - 80px);
+    position: sticky;
+    top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.descripton-text {
+    margin: 0 0 0 50px;
+    position: relative;
+}
+
+.description-about {
+    margin: 60px 0 20px 0;
+}
+
+.titles-position {
+    top: 0;
+    left: 0;
+}
+
+.btn-position {
+    margin: 20px 0;
+}
