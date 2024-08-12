@@ -145,4 +145,23 @@
         width: 80%;
     }
 
+    .product {
+        flex-direction: column;
+    }
+
+    .product-description-wrap {
+        width: 100%;
+    }
+
+    .product-img-wrap {
+        width: 100%;
+    }
+
+    .descripton-text {
+        margin: 0 0 0 30px;
+    }
+
+    .descripton-text p {
+        width: 80%;
+    }
 }
