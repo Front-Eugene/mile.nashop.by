@@ -28,6 +28,10 @@ body {
     background-attachment: fixed;
 }
 
+.catalog-screen p {
+    width: 50%;
+}
+
 .catalog-category {
     width: 100%;
     display: flex;
