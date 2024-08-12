@@ -7,6 +7,11 @@
     .screen img {
         width: 100px;
         height: 100px;
+        bottom: 100px;
+    }
+
+    .text {
+        bottom: 100px;
     }
 
     .model {
@@ -41,7 +46,7 @@
     }
 
     .controls {
-        transform: translateX(-30%);
+        transform: translateX(-20%);
     }
 
 
@@ -69,9 +74,13 @@
         border-top: 20px solid #fff;
     }
 
+    .form-title {
+        left: 30px;
+    }
+
     .form-text {
         width: auto;
-        padding: 90px 0 0 30px;
+        padding: 90px 30px 0 30px;
     }
 
     .form-wrap {
