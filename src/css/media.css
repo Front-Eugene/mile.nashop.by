@@ -132,10 +132,12 @@
     }
 
     .article-screen h1 {
+        font-size: 15px;
         margin: 100px 0 0 -30px;
     }
 
     .article-screen h2 {
+        font-size: 15px;
         margin: 170px 0 0 -30px;
     }
 
