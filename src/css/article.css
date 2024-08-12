@@ -23,3 +23,14 @@
     height: 400px; 
     margin: 20px 0;
 }
+
+.article-body p {
+    margin: 20px 0;
+}
+
+.same {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
